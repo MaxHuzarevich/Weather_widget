@@ -61,3 +61,8 @@ export const calculateDewPoint = (temp, humidity) => {
     const dewPoint = (b * ft) / (a - ft);
     return dewPoint.toFixed(1);
 }
+
+export const convertPressure = (pressure) => {
+    const mmHg = pressure * 0.750063755419211;
+    return mmHg.toFixed(2);
+}

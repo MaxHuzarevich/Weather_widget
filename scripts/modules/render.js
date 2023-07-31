@@ -1,4 +1,4 @@
-import {calculateDewPoint, getCurrentDateTime, getWindDirection} from "./helpers.js";
+import {calculateDewPoint, convertPressure, getCurrentDateTime, getWindDirection} from "./helpers.js";
 
 export const renderWidgetToday = (widget, data) => {
 
@@ -53,7 +53,7 @@ export const renderWidgetOther = (widget, data) => {
         </div>
         <div class="widget__pressure">
             <p class="widget__pressure-title">Давление</p>
-            <p class="widget__pressure-value">768.32</p>
+            <p class="widget__pressure-value">${convertPressure(data.main.pressure)}</p>
             <p class="widget__pressure-text">мм рт.ст.</p>
         </div>
     </div>
