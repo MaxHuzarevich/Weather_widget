@@ -87,9 +87,8 @@
   height: 20px;
   flex: 0 0 20px;
   border: none;
-  background-color: transparent;
   padding: 0;
-  background: transparent url('../icon/edit.svg') center/contain no-repeat;
+  background: transparent url('./icon/edit.svg') center/contain no-repeat;
 
 }
 
@@ -108,7 +107,6 @@
 .widget__other {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: top;
   gap: 10px;
   margin-bottom: 15px;
 }
@@ -150,7 +148,7 @@
 
 .widget__forecast {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .widget__day-item {
